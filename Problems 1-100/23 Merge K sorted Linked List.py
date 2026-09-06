@@ -42,9 +42,9 @@ class ListNode:
         self.val = val
         self.next = next
 
-        
+
 class Solution:
-    def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+    def mergeKLists(self, lists: list[Optional[ListNode]]) -> Optional[ListNode]:
         dummy = result = ListNode(0)
         counter = 0
         priority_queue = []
@@ -64,7 +64,7 @@ class Solution:
 
 # My Brute Force Approach:
 class Solution2:
-    def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+    def mergeKLists(self, lists: list[Optional[ListNode]]) -> Optional[ListNode]:
         res = dummy = ListNode(0)
         while lists:
             i = 0
